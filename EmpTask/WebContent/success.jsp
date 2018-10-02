@@ -37,12 +37,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	<% ArrayList<Employee> aa = (ArrayList<Employee>)request.getAttribute("arraylist1"); %>
 	<% ArrayList<Employee> bb = null;
- if(request.getAttribute("arraylist2") != null){ bb = (ArrayList<Employee>)request.getAttribute("arraylist2"); } %>
+ if(request.getAttribute("arraylist2") != null){ 
+	 bb = (ArrayList<Employee>)request.getAttribute("arraylist2"); 
+	 } %>
+	
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-1">
-					<a href="AddServlet" class="btn btn-info btn-lg"> <span
+					<a href="EmpServlet" class="btn btn-info btn-lg"> <span
 						class="glyphicon glyphicon-home"></span> Home
 					</a>
 				</div>
@@ -73,9 +76,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 			<div class="col-md-12">
 
-
-
-				<div class="col-md-4">
+			<% if(month !=null) { %>
+ 				<div class="col-md-4">
 
 					<table class="table table-striped">
 						<tr>
@@ -102,16 +104,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 				</div>
-
+ 
+					<% } %>
+					
 				<div class="col-md-8">
 
 
 					<%  if(bb!=null){ %>
+
 					<table class="table table-bordered">
 						<tr>
 							<td>EmpID</td>
-							<td>Name</td>
-							<td>Manager</td>
+
 							<td>Date</td>
 							<td>InTime</td>
 							<td>OutTime</td>
@@ -122,8 +126,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<% for(Employee al : bb){ %>
 						<tr>
 							<td><%=al.getEmpId() %></td>
-							<td><%=al.getName() %></td>
-							<td><%=al.getManager() %></td>
+
 							<td><%=al.getDate() %></td>
 							<td><%=al.getInTime() %></td>
 							<td><%=al.getOutTime() %></td>

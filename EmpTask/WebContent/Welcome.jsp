@@ -10,7 +10,7 @@
 <head>
 <base href="<%=basePath%>">
 
-<title>My JSP 'Login.jsp' starting page</title>
+<title>Employee Attendance</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -74,8 +74,7 @@
 				<form action="EmpServlet" method="post">
 					<center>
 						
-						<input
-							type=submit value="Go to Employee Attendance Page" class="btn btn-success btn-lg">
+						<input type=submit value="Go to Employee Attendance Page" class="btn btn-success btn-lg">
 
 					</center>
 				</form>

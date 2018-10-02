@@ -1,5 +1,5 @@
 package com.bean;
-
+import java.sql.Date;
 public class Employee {
 
 	private String EmpId;
