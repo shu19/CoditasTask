@@ -5,15 +5,15 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 <welcome-file-list>
-	<welcome-file>Add.jsp</welcome-file>
+	<welcome-file>Welcome.jsp</welcome-file>
 </welcome-file-list>
   <servlet>
-    <servlet-name>AddServlet</servlet-name>
-    <servlet-class>com.bean.AddServlet</servlet-class>
+    <servlet-name>EmpServlet</servlet-name>
+    <servlet-class>com.bean.EmpServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>AddServlet</servlet-name>
-    <url-pattern>/AddServlet</url-pattern>
+    <servlet-name>EmpServlet</servlet-name>
+    <url-pattern>/EmpServlet</url-pattern>
   </servlet-mapping>
 </web-app>

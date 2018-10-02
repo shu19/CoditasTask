@@ -56,18 +56,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</button>
 
 					<ul class="dropdown-menu">
-						<li><a href="AddServlet?month=01">January</a></li>
-						<li><a href="AddServlet?month=02">February</a></li>
-						<li><a href="AddServlet?month=03">March</a></li>
-						<li><a href="AddServlet?month=04">April</a></li>
-						<li><a href="AddServlet?month=05">May</a></li>
-						<li><a href="AddServlet?month=06">Jun</a></li>
-						<li><a href="AddServlet?month=07">July</a></li>
-						<li><a href="AddServlet?month=08">August</a></li>
-						<li><a href="AddServlet?month=09">September</a></li>
-						<li><a href="AddServlet?month=10">October</a></li>
-						<li><a href="AddServlet?month=11">November</a></li>
-						<li><a href="AddServlet?month=12">December</a></li>
+						<li><a href="EmpServlet?month=01">January</a></li>
+						<li><a href="EmpServlet?month=02">February</a></li>
+						<li><a href="EmpServlet?month=03">March</a></li>
+						<li><a href="EmpServlet?month=04">April</a></li>
+						<li><a href="EmpServlet?month=05">May</a></li>
+						<li><a href="EmpServlet?month=06">Jun</a></li>
+						<li><a href="EmpServlet?month=07">July</a></li>
+						<li><a href="EmpServlet?month=08">August</a></li>
+						<li><a href="EmpServlet?month=09">September</a></li>
+						<li><a href="EmpServlet?month=10">October</a></li>
+						<li><a href="EmpServlet?month=11">November</a></li>
+						<li><a href="EmpServlet?month=12">December</a></li>
 					</ul>
 				</div>
 			</div>
@@ -93,7 +93,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 							<td><a
-								href="AddServlet?month=<%=month%>&empId=<%=al.getEmpId() %>">View
+								href="EmpServlet?month=<%=month%>&empId=<%=al.getEmpId() %>">View
 									Details</a></td>
 						</tr>
 						<%} %>
