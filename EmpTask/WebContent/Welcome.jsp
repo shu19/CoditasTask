@@ -70,9 +70,9 @@
 
 				<form action="EmpServlet" method="post">
 					<center>
-						Username <input type=text name="username"></input> <br>
-						Password <input type=password name="password"></input> <br> <input
-							type=submit value="Login" class="">
+						
+						<input
+							type=submit value="Go to Employee Attendance Page" class="btn btn-success btn-lg">
 
 					</center>
 				</form>

@@ -42,7 +42,7 @@ public class EmpServlet extends HttpServlet {
 			} catch (ClassNotFoundException | SQLException e) {
 				e.printStackTrace();
 			}
-		}else if (request.getParameter("readExcel") != null) {
+		}else if (request.getParameter("createDatabase") != null) {
 			try {
 				myClass.createDatabase();
 			} catch (ClassNotFoundException | SQLException e) {
