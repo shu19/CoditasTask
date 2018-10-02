@@ -48,6 +48,7 @@
 		<div class="row">
 			<div class="col-md-12">
 
+			<div class="col-md-6">
 				<form action="${pageContext.request.contextPath}/EmpServlet"
 					method="post">
 
@@ -67,7 +68,9 @@
 					
 				</form>
 
-
+			</div>
+			
+			<div class="col-md-6">
 				<form action="EmpServlet" method="post">
 					<center>
 						
@@ -76,7 +79,7 @@
 
 					</center>
 				</form>
-
+			</div>
 			</div>
 		</div>
 	</div>
